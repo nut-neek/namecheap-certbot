@@ -19,7 +19,7 @@ class ApiClient:
         else:
             self.api_url = "https://api.namecheap.com/xml.response"
 
-        [_, sld, tld] = certbot_domain.split('.')
+        [sld, tld] = certbot_domain.split('.')
         self.params = {'ApiUser': os.getenv('API_USERNAME'), 'ApiKey': os.getenv('API_KEY'),
                        'UserName': os.getenv('NC_USERNAME'), 'ClientIp': os.getenv('CLIENT_IP'),
                        'SLD': sld, 'TLD': tld}
