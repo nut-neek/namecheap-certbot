@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 import os, requests
 from bs4 import BeautifulSoup as bs
 from telegram import TelegramBot

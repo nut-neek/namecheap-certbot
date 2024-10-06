@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# https://github.com/trwnh/namecheap
+# based on: https://github.com/trwnh/namecheap
 
 import os, time
 from _namecheap_client import Records
